@@ -20,7 +20,7 @@ public class YsUserController {
 	@RequestMapping("/user/{name}")
 	@ResponseBody
 	public Result getCatList(@PathVariable String name) {
-		YsUser user = new YsUser(name, true, new Date(), "重庆");
+		YsUser user = new YsUser(name, true, new Date(), "重庆 ");
 		ts.addUser(user);
 		return new Result("成功", 0, user, true);
 	}
